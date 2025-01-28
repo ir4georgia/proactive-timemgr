@@ -7,10 +7,6 @@ export default function DateTimeComp() {
 
   useEffect(() => {
     // Correct the time on the client after hydration
-    setDateTime(new Date());
-  }, []);
-  useEffect(() => {
-    // Correct the time on the client after hydration
     const intervalId = setInterval(() => {
       setDateTime(new Date());
     }, 1000);
