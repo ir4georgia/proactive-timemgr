@@ -4,6 +4,7 @@ import Calender from "@/components/Calendar"
 import SharpenTheSaw from "@/components/SharpenTheSaw";
 import ReviewStep from "@/components/ReviewStep";
 import PlanStep from "@/components/PlanStep";
+import Roles from "@/components/Roles";
 
 export default function Home() {
   return (
@@ -29,8 +30,10 @@ export default function Home() {
         <div className="superDiv hidden md:block row-span-2 col-start-5 md:row-start-2">Current Month +2
           <Calender />
         </div>
-        <div className="superDiv hidden md:block col-span-2 col-start-1 md:row-start-3 bg-white text-red-600">Proactive Time Manager Version 0.1</div>
-        <div className="superDiv row-span-6 row-start-2 md:row-start-4">Roles</div>
+        <div className="superDiv hidden md:block col-span-2 col-start-1 md:row-start-3 font-bold bg-white text-red-600">Proactive Time Manager Version 0.1</div>
+        <div className="superDiv row-span-6 row-start-2 md:row-start-4">Roles
+          <Roles />
+        </div>
         <div className="superDiv row-span-6 row-start-2 md:row-start-4">Goals</div>
         <div className="superDiv row-span-2 row-start-2 md:row-start-4">Sharpen the Saw
           <SharpenTheSaw />
