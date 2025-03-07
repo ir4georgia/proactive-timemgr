@@ -5,9 +5,11 @@ import SharpenTheSaw from "@/components/SharpenTheSaw";
 import ReviewStep from "@/components/ReviewStep";
 import PlanStep from "@/components/PlanStep";
 import Roles from "@/components/Roles";
+import Goals from "@/components/Goals";
 
 export default function Home() {
   return (
+    
     <div className="mainContainer 2xl:container mx-auto p-2 mt-4 mb-4">
 
       <div className="grid grid-cols-3 md:grid-cols-5 grid-rows-12 md:grid-rows-9 gap-2 auto-rows-fr">
@@ -34,7 +36,9 @@ export default function Home() {
         <div className="superDiv row-span-6 row-start-2 md:row-start-4">Roles
           <Roles />
         </div>
-        <div className="superDiv row-span-6 row-start-2 md:row-start-4">Goals</div>
+        <div className="superDiv row-span-6 row-start-2 md:row-start-4">Goals
+          <Goals />
+        </div>
         <div className="superDiv row-span-2 row-start-2 md:row-start-4">Sharpen the Saw
           <SharpenTheSaw />
         </div>
